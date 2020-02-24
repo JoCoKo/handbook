@@ -12,7 +12,7 @@
 * Спулить docker image
 
   `docker pull jocoko/handbook`
-* Запустить контенер
+* Запустить контейнер
 
   `docker run -d --name handbook -p 8080:8080 jocoko/handbook`
   
