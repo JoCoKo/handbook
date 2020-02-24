@@ -21,13 +21,6 @@ public class HandbookController {
 
     @GetMapping("/handbook/{id}")
     public Handbook getItemById(@PathVariable("id") Long id) {
-
-        try {
-            long time = 3000L;
-            Thread.sleep(time);
-        } catch (InterruptedException e) {
-            throw new IllegalStateException(e);
-        }
         System.out.println("Got id request");
         return handbookMybatisRepository.findById(id);
     }
